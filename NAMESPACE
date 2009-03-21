@@ -1,0 +1,30 @@
+
+importFrom("graphics","plot")
+importFrom("stats","deriv","integrate")
+
+exportClasses(	
+	"SplineBasis",
+	"OrthogonalSplineBasis" )
+			
+exportMethods(
+	"integrate",
+	"deriv",
+	"dim",
+	"evaluate",
+	"orthogonalize",
+	"plot")
+	
+export(
+	"fitLS",
+	"Hankel",
+	"MatrixPower",
+	"OrthogonalizeBasis",
+	"OrthogonalSplineBasis",
+	"OuterProdSecondDerivative",
+	"OBasis",
+	"SplineBasis" )
+	
+S3Method(dim,SplineBasis)
+S3Method(print,SplineBasis)
+S3Method(print,OrthogonalSplineBasis)
+S3Method(plot,SplineBasis)
