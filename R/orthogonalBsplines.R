@@ -140,6 +140,23 @@ plot.SplineBasis<-function(x,y,xlab=NULL,ylab=NULL,main='Basis Functions', type=
 	matplot(plotdata,evaluate(x,as(plotdata,"numeric")),type='l',xlab=xlab,ylab=ylab,main=main,...)
 }
 setMethod("plot",signature(x="SplineBasis",y="missing"),plot.SplineBasis)
+setMethod("plot",signature(x="SplineBasis",y="vector"),
+	function(x,y,xlab=deparse(substitute(x)),ylab=deparse(substitute(y)),type='l',...){
+	stopifnot(NROW(y)==ncol(x))
+	k<-x@knots[(x@order):(length(x@knots)-x@order+1)]
+	px<-seq(min(k),max(k),length=100)
+	B<-evaluate(x,px)
+	plot(px,B%*%y,xlab=xlab,ylab=ylab,type=type,...)
+})
+setMethod("plot",signature(x="SplineBasis",y="matrix"),
+	function(x,y,xlab=deparse(substitute(x)),ylab=deparse(substitute(y)),type='l',...){
+	stopifnot(NROW(y)==ncol(x))
+	k<-x@knots[(x@order):(length(x@knots)-x@order+1)]
+	px<-seq(min(k),max(k),length=100)
+	B<-evaluate(x,px)
+	matplot(px,B%*%y,xlab=xlab,ylab=ylab,type=type,...)
+})
+
 
 OuterProdSecondDerivative<-function(basis){
 	M<-basis@Matrices
@@ -220,6 +237,13 @@ Hankel<-function(x,nrow=length(x)%/%2,ncol=length(x)%/%2){
 	}
 	Z
 }
-
+expand.knots<-function(interior, order=4){
+	knots<-interior[c(
+	rep(1,order-1),
+	seq(length(interior)),
+	rep(length(interior),order-1))]
+	attr(knots,'order')<-order
+	knots
+}
 #Aliasing
 OBasis<-function(...)OrthogonalSplineBasis(...)
