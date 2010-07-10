@@ -177,6 +177,10 @@ fitLS<-function(object, x, y, penalty=0){
 	solve(crossprod(B)+penalty*OuterProdSecondDerivative(object),crossprod(B,y))
 }
 
+setGeneric("penaltyMatrix",function(object, ...)standardGeneric("penaltyMatrix"))
+setMethod("penaltyMatrix",signature("SplineBasis"),function(object,...)OuterProdSecondDerivative(object))
+
+
 
 #Helper Functions
 DerivativeMatrix<-function(n){
