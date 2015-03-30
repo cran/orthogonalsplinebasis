@@ -1,18 +1,17 @@
 Package: orthogonalsplinebasis
 Type: Package
-Title: Orthogonal Bspline Basis Functions
-Version: 0.1.5
-Date: 7/10/2010
+Title: Orthogonal B-Spline Basis Functions
+Version: 0.1.6
+Date: 2015-03-30
 Author: Andrew Redd
 Depends: methods, stats, graphics
-Maintainer: Andrew Redd <aredd@stat.tamu.edu>
-Description: Represents the basis functions for Bsplines in a simple
-        matrix formulation that facilitates, taking integrals,
-        derivatives, and orthogonalizing the basis functions.
+Maintainer: Andrew Redd <andrew.redd@hsc.utah.edu>
+Description: Represents the basis functions for B-splines in a simple matrix
+    formulation that facilitates, taking integrals, derivatives, and
+    making orthogonal the basis functions.
 License: GPL (>= 2)
-URL: http://osplinebasis.r-forge.r-project.org
+URL: https://github.com/halpo/obsplines
+Packaged: 2015-03-30 20:03:41 UTC; aredd
+NeedsCompilation: no
 Repository: CRAN
-Repository/R-Forge/Project: osplinebasis
-Repository/R-Forge/Revision: 51
-Date/Publication: 2011-06-03 06:06:48
-Packaged: 2011-04-28 13:34:08 UTC; rforge
+Date/Publication: 2015-03-31 07:51:02

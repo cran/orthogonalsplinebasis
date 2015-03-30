@@ -1,0 +1,17 @@
+cbaff21a804bfebe1da610a864411a36 *DESCRIPTION
+233e5e01f3b0dc3e7209e8b24d835a83 *NAMESPACE
+04e4f873983503f97600c097f4ede343 *NEWS
+08561ba78b91bccd26a825dbcdfa30f0 *R/orthogonalBsplines.R
+87a39ced7a29b3edbf4d2d9693a14e46 *man/GramMatrix.Rd
+638a85de881a7205e8222fbd657e6cd3 *man/Hankel.Rd
+a3bbfcbaf3b25ce90608551521c642ac *man/MatrixPower.Rd
+2efdca35fc6fddf26f301bf22d391185 *man/OrthogonalizeBasis.Rd
+84d23cd7074033f9f52824a842538d84 *man/OuterProdSecondDerivative.Rd
+4a236f44d278b4ce99d7832777896284 *man/SplineBasis-class.Rd
+3a7040157534cc9c172aa4016ae66f2a *man/SplineBasis.Rd
+55741e9a4152fde2e69ef1bc88cdada4 *man/evaluate-methods.Rd
+df699c62a47c9d7eb1682c63c1e25463 *man/expand.knots.Rd
+7b39d6b272f9e13335990306818e9b86 *man/fitLS.Rd
+86236b69314d598dde010e306283f594 *man/integrate-methods.Rd
+73ce8912ca2a780b9315ae4de7afbe85 *man/orthogonalize-methods.Rd
+f2ca68632ccf547eb3dc11ef62c680be *man/orthogonalsplinebasis.Rd
