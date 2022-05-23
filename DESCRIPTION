@@ -1,8 +1,8 @@
 Package: orthogonalsplinebasis
 Type: Package
 Title: Orthogonal B-Spline Basis Functions
-Version: 0.1.6
-Date: 2015-03-30
+Version: 0.1.7
+Date: 2022-05-10
 Author: Andrew Redd
 Depends: methods, stats, graphics
 Maintainer: Andrew Redd <andrew.redd@hsc.utah.edu>
@@ -11,7 +11,9 @@ Description: Represents the basis functions for B-splines in a simple matrix
     making orthogonal the basis functions.
 License: GPL (>= 2)
 URL: https://github.com/halpo/obsplines
-Packaged: 2015-03-30 20:03:41 UTC; aredd
+Suggests: spelling
+Language: en-US
 NeedsCompilation: no
+Packaged: 2022-05-23 17:56:17 UTC; u0092104
 Repository: CRAN
-Date/Publication: 2015-03-31 07:51:02
+Date/Publication: 2022-05-23 19:00:01 UTC
